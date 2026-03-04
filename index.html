@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMart - Advanced CSS Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo">🛍️ MayTechMart</a>
+        <div class="header-actions">
+            <button class="btn btn--outline">Login</button>
+            <button class="btn btn--primary cart-button">
+                🛒 Cart
+                <span class="cart-badge">3</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Tech Deals of the Year</h1>
+            <p class="hero-subtitle">Premium electronics at unbeatable prices. Limited time offer!</p>
+            <button class="hero-cta">Shop Now →</button>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="filter-pills">
+            <button class="pill pill--active">All</button>
+            <button class="pill">Laptops</button>
+            <button class="pill">Headphones</button>
+            <button class="pill">Accessories</button>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="products">
+        <div class="product-grid">
+            <!-- Product 1: Laptop (Sale) -->
+            <article class="product-card product-card--sale">
+                <div class="product-image">
+                    <img src="images/UltraBook Pro.jpg" alt="UltraBook Pro">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">UltraBook Pro</h3>
+                    <p class="product-description">15.6" 4K Display, Intel i7, 16GB RAM, 512GB SSD</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$899</span>
+                        <span class="price-old">$1,299</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 2: Headphones (Low Stock) -->
+            <article class="product-card product-card--low-stock">
+                <div class="product-image">
+                    <img src="images/Wireless Headphones.jpg" alt="Wireless Headphones">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Wireless Headphones</h3>
+                    <p class="product-description">Active Noise Cancellation, 30hr Battery, Premium Sound</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$199</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 3: Keyboard (High Rating) -->
+            <article class="product-card" data-rating="4.9">
+                <div class="product-image">
+                    <img src="images/Mechanical Keyboard.jpg" alt="Mechanical Keyboard">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Mechanical Keyboard</h3>
+                    <p class="product-description">RGB Backlit, Blue Switches, Aluminum Frame</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$149</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 4: Mouse (Regular) -->
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="images/Gaming Mouse.jpg" alt="Gaming Mouse">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Gaming Mouse</h3>
+                    <p class="product-description">16000 DPI, Programmable Buttons, RGB Lighting</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$79</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 5: Monitor (Sale + High Rating) -->
+            <article class="product-card product-card--sale" data-rating="4.8">
+                <div class="product-image">
+                    <img src="images/4K Monitor.jpg" alt="4K Monitor">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">4K Monitor</h3>
+                    <p class="product-description">27" 4K IPS, 144Hz, HDR400, USB-C Hub</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$449</span>
+                        <span class="price-old">$699</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+
+            <!-- Product 6: Webcam (Low Stock) -->
+            <article class="product-card product-card--low-stock">
+                <div class="product-image">
+                    <img src="images/HD Webcam.jpg" alt="HD Webcam">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">HD Webcam</h3>
+                    <p class="product-description">1080p 60fps, Auto Focus, Noise Reduction</p>
+                    <div class="product-rating">
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">⭐</span>
+                        <span class="star">☆</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="price-current">$89</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        // Simple cart functionality
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.classList.contains('add-to-cart--added')) {
+                    this.classList.remove('add-to-cart--added');
+                    this.textContent = 'Add to Cart';
+                    updateCartBadge(-1);
+                } else {
+                    this.classList.add('add-to-cart--added');
+                    this.textContent = '✓ Added';
+                    updateCartBadge(1);
+                }
+            });
+        });
+
+        function updateCartBadge(change) {
+            const badge = document.querySelector('.cart-badge');
+            const currentCount = parseInt(badge.textContent);
+            badge.textContent = Math.max(0, currentCount + change);
+        }
+
+        // Filter functionality
+        document.querySelectorAll('.pill').forEach(pill => {
+            pill.addEventListener('click', function() {
+                document.querySelectorAll('.pill').forEach(p => p.classList.remove('pill--active'));
+                this.classList.add('pill--active');
+            });
+        });
+    </script>
+</body>
+</html>
